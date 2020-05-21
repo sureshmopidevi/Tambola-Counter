@@ -1,5 +1,5 @@
 # Tambola-Counter
-It is an coin counter for Tamboola game.
+It is a coin counter for Tamboola game.
 
 ### Demo
 ![ezgif-3-c8970adcc799](https://user-images.githubusercontent.com/49426260/82561500-2154f300-9b91-11ea-9cdf-8a19e3f8565b.gif)
