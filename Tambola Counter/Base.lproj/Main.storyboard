@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9rO-oZ-Vqc">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tambola Counter-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tambola_Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vt3-px-EgA">
+                                <rect key="frame" x="0.0" y="118" width="768" height="890"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="959-9k-lxQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="239"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKB-a7-NdQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="768" height="239"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                                <color key="textColor" red="0.17145679029999999" green="0.54966262320000003" blue="0.47600064209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="highlightedColor" red="0.17145679029999999" green="0.54966262320000003" blue="0.47600064209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wX-Ll-lwL">
+                                        <rect key="frame" x="0.0" y="239" width="768" height="595"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D4S-ll-yhJ">
+                                                <rect key="frame" x="100" y="36" width="568" height="523"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NB5-5v-nlr">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                            </collectionView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="D4S-ll-yhJ" secondAttribute="trailing" constant="100" id="4MX-Hj-h5N"/>
+                                            <constraint firstItem="D4S-ll-yhJ" firstAttribute="top" secondItem="1wX-Ll-lwL" secondAttribute="top" constant="36" id="XGl-eb-jnj"/>
+                                            <constraint firstAttribute="bottom" secondItem="D4S-ll-yhJ" secondAttribute="bottom" constant="36" id="cz9-Z9-RFe"/>
+                                            <constraint firstItem="D4S-ll-yhJ" firstAttribute="leading" secondItem="1wX-Ll-lwL" secondAttribute="leading" constant="100" id="qyv-lf-jPZ"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NTS-0U-fyu">
+                                        <rect key="frame" x="0.0" y="834" width="768" height="56"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xf-TO-DEd">
+                                                <rect key="frame" x="0.0" y="0.0" width="376" height="56"/>
+                                                <color key="backgroundColor" red="0.93093264099999995" green="0.33461403849999999" blue="0.39804583789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="RESET">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TR9-DO-vqL">
+                                                <rect key="frame" x="392" y="0.0" width="376" height="56"/>
+                                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="NEXT">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="XyP-bv-r02"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vt3-px-EgA" secondAttribute="bottom" constant="16" id="DvX-6n-NNa"/>
+                            <constraint firstItem="vt3-px-EgA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Of7-nO-ouM"/>
+                            <constraint firstItem="vt3-px-EgA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="S6L-mx-iRv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vt3-px-EgA" secondAttribute="trailing" id="vq4-pP-cQ7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tambola Counter" id="Wbt-Q7-h8s"/>
+                    <connections>
+                        <outlet property="counterList" destination="D4S-ll-yhJ" id="uda-kb-7Pn"/>
+                        <outlet property="currentValueLabel" destination="zKB-a7-NdQ" id="x7G-aS-GfP"/>
+                        <outlet property="nextNumberButton" destination="TR9-DO-vqL" id="M1R-0l-Gcf"/>
+                        <outlet property="resetButton" destination="2xf-TO-DEd" id="sre-nZ-x1y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903.90625" y="129.4921875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FZC-Y1-9fA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9rO-oZ-Vqc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Lmx-Bp-Xhv">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="102"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="amK-qZ-mh6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVl-Jq-BGN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.28125" y="129.4921875"/>
+        </scene>
+    </scenes>
+</document>
